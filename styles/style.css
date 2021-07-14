@@ -1,0 +1,276 @@
+body{
+    font-family: 'Poppins', sans-serif;
+}
+/* header css apply open */
+header{
+    background-color: #2D25A0;
+}
+.nav_bar{
+    margin: 0;
+    padding: 0;
+    /* width: 95%;
+    display: flex; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    
+}
+.nav_bar_width{
+    width: 100%;
+}
+
+.item2{
+    background-color: #E02C6D;
+    padding: 5px 15px;
+    border-radius: 5px;
+    position: absolute;
+    left: 85%;
+}
+
+.nav_bar ul{
+    list-style: none;
+    display: flex;
+    padding: 0% 2%;
+    margin-left: 50px;
+}
+.menu_item{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    margin-left: 10px;
+    padding: 10px;
+}
+.header_section{
+    margin: 0;
+    padding: 0;
+    height: 545px;
+    width: 100%;
+    color: white;
+}
+.header_container{
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 30px ;
+}
+.header_flex{
+    width: 100%;
+    overflow: hidden;
+}
+.header_article{
+    width: 90%;
+    margin-bottom: 50px;
+    
+}
+.header_article h1{
+    font-size: 64px;
+    font-weight: bold;
+    margin-left: 80px;
+    margin-bottom: 10px;
+}
+.header_article a{
+    color: white;
+    text-decoration: none;
+    margin-left: 80px;
+    padding: 10px;
+    background-color: #E02C6D;
+}
+.fa-sign-in-alt{
+    padding-right: 10px;
+}
+.fa-arrow-right{
+    padding-left: 10px;
+}
+.header_flex img{
+    width: 80%;
+    margin: 60px;
+    
+}
+.header_container:hover .header_flex img{
+    transform: scale(1.1) rotate(40deg);
+    transition: transform 1s ease-in-out;
+}
+/* header css apply close */
+
+/* main css apply open */
+.main_container{
+    margin: 0 7%;
+    padding: 0;
+    width: 86%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 70px;
+}
+.all_players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;
+    row-gap: 27px;
+    
+}
+.player{
+    width: 300px;
+    height: 456px;
+    padding: 15px;
+    box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.15);
+    
+}
+.player .player_banner img{
+    width: 300px;
+    height: 256px;
+    margin-bottom: 16px;
+
+}
+.player .player_info{
+    width: 300px;
+    height: 154px;
+}
+.player_info{
+    text-align: justify;
+}
+/* main css apply close */
+
+/* bonus section css open */
+.bonus{
+    display: block;
+}
+.bonus2{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;
+}
+.top_player h1{
+    text-align: center;
+    font-weight: bold;
+    font-size: 50px;    
+}
+.top_player_Color{
+    background-color: red;
+    color: white;
+    padding: 20px;
+}
+
+.bonus_section2{
+    margin-top: 120px;
+    width: 86%;
+    margin-left: 7%;
+
+}
+.bonus_section2 h1{
+    text-align: center;
+    font-weight: bold;
+    font-size: 50px; 
+}
+
+.blog .thumnail img{
+    width: 200px;
+    height: 150px;
+}
+.blogs{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 27px;
+    column-gap: 30px;
+    
+}
+.blog{
+    display: flex;
+    box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.15);
+}
+.blog_info{
+    margin-left: 15px;
+}
+/* bonus section css close */
+
+/* footer css apply open  */
+.footer {
+    margin: 0;
+    padding-top: 160px;
+    width: 100%;
+    height: 213px;
+    display: flex;
+    justify-content: center;
+}
+.footer img{
+    width: 483px;
+    height: 110px;
+}
+.footer ul{
+    margin: 40px 0 30px 103px;
+
+}
+.footer a{
+    padding: 10px 15px;
+    background-color: #D9D7D8;
+    color: #969CAC;
+    border-radius: 30px;
+    
+}
+.footer h4{
+    text-align: center;
+    font-size: 18px;
+    font-weight: normal;
+}
+/* footer css apply close  */
+
+/*------------------------
+                media Query 
+-----------------------------*/
+@media only screen and (max-width:688px){
+    .nav_bar{
+        display: none;
+    }
+    .header, .footer{
+        width: 100%;
+    }
+    .header_section{
+        margin: 0;
+        padding: 0;
+        height: 700px;
+        width: 90%;
+        color: white;
+    }
+    .header_article h1{
+        margin: 20px 5px;
+        font-size: 40px;
+    }
+    .header_article a{
+        margin-left: 5px;
+    }
+    .header_container{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        /* padding: 0 30px ; */
+    }
+    .all_players, .bonus2, .blogs{
+        
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .blog{
+        align-items: center;
+        flex-direction: column;
+    }
+    .footer img{
+        width: 300px;
+        height: 90px;
+    }
+    .footer ul{
+        margin: 35px 10px 35px 15px;
+
+    }
+    .footer h4{
+        margin-bottom: 80px;
+    }
+    .top_player_Color{
+        background-color:white;
+        color:red;
+        padding:0px;
+    }
+    .thumnail img{
+        align-items: center;
+        
+    } 
+}
